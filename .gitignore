@@ -1,0 +1,8 @@
+# .gitignore file for ScoreboardEditorForStream
+
+# build objects
+bin
+obj
+
+# visual studio files
+.vs
