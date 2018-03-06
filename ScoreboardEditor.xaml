@@ -5,5 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ScoreboardEditorForStream"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="458.464" Width="229.688">
+    <Grid>
+        <RadioButton x:Name="FirstRadioButton" Checked="RadioButtonChecked" GroupName ="Period" Content="1st" IsChecked="true" HorizontalAlignment="Left" Margin="15,23,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="SecondRadioButton" GroupName ="Period" Checked="RadioButtonChecked" Content="2nd" HorizontalAlignment="Left" Margin="59,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.723,0.434"/>
+        <RadioButton x:Name="ThirdRadioButton" GroupName ="Period" Checked="RadioButtonChecked" Content="3rd" HorizontalAlignment="Left" Margin="111,23,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="OvertimeRadioButton" GroupName ="Period" Checked="RadioButtonChecked" Content="OT" HorizontalAlignment="Left" Margin="161,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.042,0.495"/>
+        <TextBlock x:Name="TeamOneTitle" HorizontalAlignment="Left" Margin="60,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Americans Score"/>
+        <Button x:Name="AddTeamOneScore" Content="+" Click="AddTeamOneScoreEvent" HorizontalAlignment="Left" Margin="134,86,0,0" VerticalAlignment="Top" Width="61"/>
+        <Button x:Name="SubtractTeamOneScore" Content="-" Click="SubtractTeamOneScoreEvent" HorizontalAlignment="Left" Margin="24,86,0,0" VerticalAlignment="Top" Width="55"/>
+        <TextBox x:Name="TeamOneScoreDisplay" HorizontalAlignment="Left" Height="23" Margin="84,86,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="36"/>
+
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="60,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Americans Shots"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="SubtractTeamOneShots" Content="-" Click="SubtractTeamOneShotEvent" HorizontalAlignment="Left" Margin="24,160,0,0" VerticalAlignment="Top" Width="55"/>
+        <Button x:Name="AddTeamOneShots" Content="+" Click="AddTeamOneShotEvent" HorizontalAlignment="Left" Margin="134,160,0,0" VerticalAlignment="Top" Width="61"/>
+        <TextBox x:Name="TeamOneShotsDisplay" HorizontalAlignment="Left" Height="23" Margin="84,157,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="36"/>
+
+        <TextBlock x:Name="TeamTwoTitle" HorizontalAlignment="Left" Margin="76,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Seals Score"/>
+        <Button x:Name="AddTeamTwoScore" Content="+" Click="AddTeamTwoScoreEvent" HorizontalAlignment="Left" Margin="134,241,0,0" VerticalAlignment="Top" Width="61"/>
+        <Button x:Name="SubtractTeamTwoScore" Content="-" Click="SubtractTeamTwoScoreEvent" HorizontalAlignment="Left" Margin="24,241,0,0" VerticalAlignment="Top" Width="55"/>
+        <TextBox x:Name="TeamTwoScoreDisplay" HorizontalAlignment="Left" Height="23" Margin="84,238,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="36"/>
+
+        <TextBlock x:Name="TeamTwoShotsTitle" HorizontalAlignment="Left" Margin="76,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Seals Shots"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="SubtractTeamTwoShots" Content="-" Click="SubtractTeamTwoShotEvent" HorizontalAlignment="Left" Margin="24,316,0,0" VerticalAlignment="Top" Width="55"/>
+        <Button x:Name="AddTeamTwoShots" Content="+" Click="AddTeamTwoShotEvent" HorizontalAlignment="Left" Margin="134,316,0,0" VerticalAlignment="Top" Width="61"/>
+        <TextBox x:Name="TeamTwoShotsDisplay" HorizontalAlignment="Left" Height="23" Margin="84,316,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="36" RenderTransformOrigin="0.594,7.138"/>
+        
+        
+    </Grid>
 </Window>
